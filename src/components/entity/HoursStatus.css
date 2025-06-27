@@ -1,0 +1,19 @@
+.HoursStatus {
+  &-current--closed,
+  &-current--open {
+    &::before {
+      content: "";
+      position: relative;
+      background-color: theme("colors.brand-primary");
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 100%;
+      margin-right: 8px;
+    }
+  }
+
+  &-current--closed::before {
+    background-color: theme("colors.brand-red.200");
+  }
+}

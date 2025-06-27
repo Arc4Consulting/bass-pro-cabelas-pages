@@ -1,0 +1,46 @@
+@import "src/styles/variables.css";
+@import "src/styles/utils.css";
+@import "src/styles/fonts.css";
+@import "src/styles/theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: unset;
+}
+
+/* TODO(bhaines): remove, this is only necessary until
+https://github.com/yext/pages/issues/211 is resolved */
+#reactele,
+#root {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto;
+  font-family: theme(fontFamily.primary);
+}
+
+.legacy-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: 768px) {
+    width: 736px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 976px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 1136px;
+  }
+}

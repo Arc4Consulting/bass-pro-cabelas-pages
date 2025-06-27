@@ -1,0 +1,44 @@
+buildConfiguration:
+  buildCommand: npm run build -- --scope temp-stores.basspro.ca
+  installDependenciesStep:
+    command: npm ci
+    requiredFiles:
+      - package.json
+      - package-lock.json
+livePreviewConfiguration:
+  setupCommand: ":"
+siteStream:
+  id: site-stream-basspro-canada
+  fields:
+    - id
+    - meta
+    - name
+    - c_copyrightMessage
+    - c_footerLinks
+    - c_header
+    - c_brand
+    - c_searchPage.slug
+    - c_logoURL
+    - c_instagram
+    - c_facebook
+    - c_youtube
+    - c_pinterest
+    - c_twitter
+    - c_nearbySectionAPIKey
+  localization:
+    locales:
+      - en
+    primary: false
+  entityId: site-entity-basspro-canada
+sitemap:
+  excludeList:
+    - feedback/
+    - robots.txt
+    - google5804978b12580bf0.html
+    - googleb3b80496355c277a.html
+    - googlebd0a38c70774abc9.html
+    - googlece5070621c727874.html
+    - googled2b2b0d496836f12.html
+    - googled44f8f19fc4a8f0d.html
+    - googlee17902bbeee43866.html
+    - googlea24u5j23hKT_23rNEMj8pvHvSSh0OEdKKKUGdbXgoEw.html

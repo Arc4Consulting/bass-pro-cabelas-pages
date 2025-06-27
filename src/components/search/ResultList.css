@@ -1,0 +1,7 @@
+.ResultList {
+  &-item {
+    counter-increment: resultCount;
+    position: relative;
+    padding: theme(spacing.4);
+  }
+}
